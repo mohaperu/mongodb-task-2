@@ -70,27 +70,27 @@ db.attendance.insertMany([
     {
         id: 1,
         task_id: 1,
-        attendance: "present"
+        attendance: true
     },
     {
         id: 2,
         task_id: 2,
-        attendance: "absent"
+        attendance: false
     },
     {
         id: 3,
         task_id: 3,
-        attendance: "present"
+        attendance: true
     },
     {
         id: 4,
         task_id: 4,
-        attendance: "present"
+        attendance: true
     },
     {
         id: 5,
         task_id: 5,
-        attendance: "absent"
+        attendance: false
     },
 ])
 
