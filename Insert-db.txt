@@ -1,0 +1,240 @@
+Design database for Zen class programme.
+users
+codekata
+attendance
+topics
+tasks
+company_drives
+mentors
+
+
+
+<-----------------Users----------------->
+
+db.users.insertMany([
+    {
+        id: 1,
+        name: "Azar",
+        email: "azar@gmail.com"
+    },
+    {
+        id: 2,
+        name: "Krishna",
+        email: "krishna@gmail.com"
+    },
+    {
+        id: 3,
+        name: "Lokesh",
+        email: "lokesh@gmail.com"
+    },
+    {
+        id: 4,
+        name: "Mohan",
+        email: "mohan@gmail.com"
+    },
+    {
+        id: 5,
+        name: "Vignesh",
+        email: "vignesh@gmail.com"
+    },
+])
+
+<-----------------Codekata----------------->
+
+db.codekata.insertMany([
+    {
+        id: 1,
+        problems: 40 
+    },
+    {
+        id: 2,
+        problems: 80
+    },
+    {
+        id: 3,
+        problems: 120
+    },
+    {
+        id: 4,
+        problems: 160
+    },
+    {
+        id: 5,
+        problems: 200
+    },
+])
+
+<-----------------Attendance----------------->
+
+db.attendance.insertMany([
+    {
+        id: 1,
+        task_id: 1,
+        attendance: "present"
+    },
+    {
+        id: 2,
+        task_id: 2,
+        attendance: "absent"
+    },
+    {
+        id: 3,
+        task_id: 3,
+        attendance: "present"
+    },
+    {
+        id: 4,
+        task_id: 4,
+        attendance: "present"
+    },
+    {
+        id: 5,
+        task_id: 5,
+        attendance: "absent"
+    },
+])
+
+<-----------------Topics----------------->
+
+db.topics.insertMany([
+    {
+        id: 1,
+        topic_id: 1,
+        topic: "HTML",
+        topic_date: "5-oct-2020"
+    },
+    
+        id: 2,
+        topic_id: 1,
+        topic: "JavaScript",6
+        topic_date: "5-oct-2020"
+    },
+    {
+        id: 3,
+        topic_id: 1,
+        topic: "React",
+        topic_date: "5-oct-2020"
+    },
+    {
+        id: 4,
+        topic_id: 1,
+        topic: "Node.js",
+        topic_date: "5-oct-2020"
+    },
+    {
+        id: 5,
+        topic_id: 1,
+        topic: "MongoDB",
+        topic_date: "5-oct-2020"
+    },
+])
+
+<-----------------Tasks----------------->
+
+db.topics.insertMany([
+    {
+        id: 1,
+        topic_id: 1,
+        task_id: 1
+        topic: "HTML",
+        submit_date: "5-oct-2020"
+        submitted: true
+    },
+    {
+        id: 2,
+        topic_id: 2,
+        task_id: 2,
+        topic: "JavaScript",
+        submit_date: "10-oct-2020"
+        submitted: false
+    },
+    {
+        id: 3,
+        topic_id: 3,
+        task_id: 3,
+        topic: "React",
+        submit_date: "15-oct-2020"
+        submitted: true
+    },
+    {
+        id: 4,
+        topic_id: 4,
+        task_id: 4,
+        topic: "Node",
+        submit_date: "20-oct-2020"
+        submitted: true
+    },
+    {
+        id: 5,
+        topic_id: 5,
+        task_id: 5,
+        topic: "MongoDB",
+        submit_date: "25-oct-2020"
+        submitted: false
+    },
+])
+
+<-----------------CompanyDrives----------------->
+
+db.company.insertMany([
+    {
+        id: 1,
+        company_drive_date: "6-oct-2020",
+        company_name: "Amazon"
+    },
+    {
+        id: 2,
+        company_drive_date: "11-oct-2020",
+        company_name: "Google"
+    },
+    {
+        id: 3,
+        company_drive_date: "16-oct-2020",
+        company_name: "Microsoft"
+    },
+    {
+        id: 4,
+        company_drive_date: "21-oct-2020",
+        company_name: "TCS"
+    },
+    {
+        id: 5,
+        company_drive_date: "26-oct-2020",
+        company_name: "LTI"
+    },
+])
+
+<-----------------Mentors----------------->
+
+db.mentors.insertMany([
+    {
+        id: 1,
+        mentor_name: "Prasanth",
+        mentor_email: "prasanth@gmail.com",
+        mentee_count: 5
+    },
+    {
+        id: 2,
+        mentor_name: "Ashok",
+        mentor_email: "ashok@gmail.com",
+        mentee_count: 10
+    },
+    {
+        id: 3,
+        mentor_name: "Prakash",
+        mentor_email: "prakash@gmail.com",
+        mentee_count: 15
+    },
+    {
+        id: 4,
+        mentor_name: "Harry",
+        mentor_email: "harry@gmail.com",
+        mentee_count: 20
+    },
+    {
+        id: 5,
+        mentor_name: "Ajay",
+        mentor_email: "ajay@gmail.com",
+        mentee_count: 25
+    },
+])
